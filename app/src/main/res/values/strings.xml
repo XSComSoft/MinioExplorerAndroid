@@ -1,5 +1,28 @@
 <resources>
-    <string name="app_name">FileBrowser</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">星溯XSSoft</string>
+    <string name="already_save">文件已经保存到了内存卡的%s</string>
+    <string name="bar_name">星溯软件科技Minio</string>
+    <string name="check_permission">检测权限</string>
+    <string name="home">星溯软件科技客戶端</string>
+    <string name="home_button">主页</string>
+    <string name="tool_box">工具栏</string>
+    <string name="setting">设置</string>
+    <string name="dev_info">开发者信息</string>
+    <string name="info">关于</string>
+    <string name="where_file">我的文件去哪了</string>
+    <string name="where_file_detail">保存到了SD卡的/XS_SOFT文件夹</string>
+    <string name="permission_not_found">请检测读写权限是否开启</string>
+    <string name="permission_deny">权限不足</string>
+    <string name="permission_add">权限添加成功</string>
+    <string name="exit">退出</string>
+    <string name="grant_permission">设置权限</string>
+    <string name="download_cancel">取消下载</string>
+    <string name="server_address">链接/Link</string>
+    <string name="server_access_key">AccessKey</string>
+    <string name="server_access_token">AccessToken</string>
+    <string name="login">登录</string>
+    <string name="xssoft">-星溯-</string>
+    <string name="prefreence_file_key">xssoft</string>
+    <string name="login_error">登陆失败</string>
+    <string name="login_success">登录成功</string>
 </resources>

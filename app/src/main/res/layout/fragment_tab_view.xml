@@ -17,19 +17,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatImageButton
+            <Spinner
                 android:id="@+id/menu_recycle_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/menu_recycle_ic"
-                android:background="@null"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/inset_menu_recycle_ic"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/change_layout"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:src="@drawable/list_ic"
                 android:background="@null"
                 app:layout_constraintRight_toLeftOf="@id/menu_recycle_button"
@@ -37,10 +36,11 @@
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/return_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:src="@drawable/return_ic"
                 android:scaleType="fitCenter"
+                android:visibility="invisible"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:background="@null"/>
@@ -50,15 +50,16 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="4dp"
+            android:layout_height="4sp"
             android:background="@drawable/top_bar_dropshadow"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/fileRecycleView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:paddingBottom="90dp"
-            android:clipToPadding="false"/>
+            android:clipToPadding="false"
+            android:paddingBottom="90sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -70,24 +71,24 @@
             android:id="@+id/tabView_bottomAppBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentInsetStart="0dp">
+            app:contentInsetStart="0sp">
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
                     android:src="@drawable/empty_file_ic"
                     android:scaleType="centerInside"/>
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
                     android:src="@drawable/empty_file_ic"
                     android:scaleType="centerInside"/>
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
                     android:src="@drawable/empty_file_ic"
                     android:scaleType="centerInside"/>
             </androidx.appcompat.widget.LinearLayoutCompat>

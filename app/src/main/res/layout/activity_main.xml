@@ -17,38 +17,37 @@
             android:orientation="vertical"
             android:gravity="start"
             android:id="@+id/topBarLayout"
-            android:background="@color/topBarYellow">
+            android:background="@color/blue">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="?android:attr/actionBarSize">
-
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/topMenuButton"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/menu_ic"
-                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:layout_marginTop="5sp"
                     android:adjustViewBounds="true"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/tool_box"
+                    android:minWidth="48sp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_ic"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
-                    android:scaleType="centerInside"/>
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tittleTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toRightOf="@+id/topMenuButton"
-                    android:textSize="32dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="@color/black"/>
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="@string/home">
+                </TextView>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
+                android:layout_height="4sp"
                 android:background="@drawable/top_bar_dropshadow"/>
         </LinearLayout>
 
@@ -56,38 +55,47 @@
             android:id="@+id/FragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="58dp"
+            android:layout_marginTop="58sp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/BottomAppBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50sp"
             android:layout_gravity="bottom"
-            app:contentInsetStart="0dp"
-            app:fabCradleMargin="6dp">
+            app:backgroundTint="#FFFFFF"
+            app:contentInsetStart="0sp"
+            app:fabCradleMargin="6sp">
+
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/empty_background"
+                app:itemIconSize="26sp"
                 app:labelVisibilityMode="unlabeled"
-                app:menu="@menu/main_bottom_bar"
-                app:itemIconSize="26dp"
-                android:background="@drawable/empty_background"/>
+                app:menu="@menu/main_bottom_bar" />
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/homeFloatingButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_anchor="@id/BottomAppBar"
-            android:src="@drawable/home_ic"
-            app:borderWidth="0dp"
-            app:fabCustomSize="60dp"
-            app:maxImageSize="38dp"
-            android:backgroundTint="@color/topBarYellow"/>
+            android:backgroundTint="@color/primary_blue"
 
+            android:contentDescription="@string/home_button"
+            android:src="@drawable/home_ic"
+            app:tint="@null"
+            android:tooltipText="@string/home_button"
+            app:elevation="5dp"
+            app:borderWidth="0sp"
+            app:fabCustomSize="60sp"
+            app:fabSize="auto"
+
+            app:layout_anchor="@id/BottomAppBar"
+            app:maxImageSize="38sp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"

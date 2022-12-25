@@ -4,21 +4,30 @@
     <group android:id="@+id/groupBase">
         <item
             android:id="@+id/home_button"
-            android:title="Home"
+            android:title="@string/home_button"
             android:icon="@drawable/home_ic"/>
         <item
             android:id="@+id/settings_button"
-            android:title="Settings"
+            android:title="@string/setting"
+            android:visible="false"
             android:icon="@drawable/settings_ic"/>
     </group>
     <group android:id="@+id/groupAbout">
         <item
             android:id="@+id/dev_button"
-            android:title="Dev. info"
+            android:title="@string/dev_info"
+            android:visible="false"
             android:icon="@drawable/code_ic"/>
         <item
             android:id="@+id/info_button"
-            android:title="About"
+            android:title="@string/info"
+            android:visible="false"
             android:icon="@drawable/info_ic"/>
+    </group>
+    <group android:id="@+id/groupExtra">
+        <item
+            android:id="@+id/where_file"
+            android:title="@string/where_file"
+            android:icon="@drawable/code_ic"/>
     </group>
 </menu>

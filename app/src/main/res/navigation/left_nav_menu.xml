@@ -6,12 +6,12 @@
     android:id="@+id/left_nav_menu">
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.digor.filebrowser.ui.HomeFragment"
+        android:name="xssoft.club.minio.ui.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment"/>
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.digor.filebrowser.ui.SettingsFragment"
+        android:name="xssoft.club.minio.ui.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings"/>
 </navigation>
