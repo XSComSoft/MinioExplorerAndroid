@@ -14,8 +14,6 @@ It references two component libraries from github, which implements Toast and We
 [GrenderG/Toasty: The usual Toast, but with steroids 💪 (github.com)](https://github.com/GrenderG/Toasty)
 ```
 
- mawserver@foxmail.com 连旭灿进行的修改，如果你有各种软件需求欢迎联系
-
 ## 使用方法/Usage
 
 只需要在登录界面输入服务器的endpoint以及credentials即可
@@ -25,3 +23,7 @@ Just enter the endpoint and credentials of the server on the login interface
 ![loginExample](md/login.png)
 
 ![Preview](md/preview.png)
+
+
+
+ **mawserver@foxmail.com 连旭灿进行的修改，如果你有各种软件需求欢迎联系**
