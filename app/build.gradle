@@ -3,21 +3,22 @@ plugins {
 }
 
 android {
-    namespace 'com.digor.filebrowser'
-    compileSdk 32
+    namespace 'xssoft.club.minio'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.digor.filebrowser"
-        minSdk 21
-        targetSdk 32
+        applicationId "xssoft.club.minio"
+        minSdk 26
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    viewBinding{
-        enabled=true
+    buildFeatures {
+        dataBinding false
+        viewBinding false
     }
 
     buildTypes {
@@ -26,6 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -33,6 +35,14 @@ android {
 }
 
 dependencies {
+    implementation 'stax:stax:1.2.0'
+    implementation 'io.minio:minio:8.4.6'
+
+    //宝库
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.2.1'
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+    //
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
@@ -43,6 +53,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-common:2.5.3'
     implementation 'androidx.navigation:navigation-compose:2.5.3'
     implementation 'androidx.navigation:navigation-runtime:2.5.3'
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

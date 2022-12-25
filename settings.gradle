@@ -1,16 +1,18 @@
 pluginManagement {
     repositories {
+        mavenLocal()
+        maven{ url 'https://xssoft.club:5678/repository/main'}
         gradlePluginPortal()
-        google()
-        mavenCentral()
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
-        google()
-        mavenCentral()
+        maven{ url 'https://xssoft.club:5678/repository/main'}
+        gradlePluginPortal()
     }
 }
+
 rootProject.name = "FileBrowser"
 include ':app'
